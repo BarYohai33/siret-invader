@@ -1,15 +1,20 @@
 {
-  "name": "mds-bigdata",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "description": "",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "figlet": "^1.2.1",
+    "mongodb": "^3.2.3",
+    "pm2": "^3.5.0",
+    "split": "^1.0.1"
+  },
+  "scripts": {
+    "app": "node entry.js",
+    "pm": "node siretManager.js"
+  },
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
