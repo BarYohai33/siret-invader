@@ -27,7 +27,6 @@ const processFiles = () => {
         } else {
           try {
             files = await getFiles('csv');
-            console.log(files);
             apps.forEach((app) => {
               const pmId = app.pm2_env.pm_id;
               pmIds.push(pmId);
@@ -74,6 +73,7 @@ const askCleaningWhenOver = (question) => {
       default:
         break;
     }
+    fs.unlinkSync('process.lock');
     process.exit(0);
   });
 };
@@ -130,8 +130,4 @@ listenProcesses();
 process.on('SIGINT', () => {
   fs.unlinkSync('process.lock');
   process.exit(0);
-});
-
-process.on('SIGKILL', () => {
-  fs.unlinkSync('process.lock');
 });

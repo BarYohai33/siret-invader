@@ -1,5 +1,7 @@
 {
   "license": "MIT",
+  "name": "Siret Invader",
+  "version": "1.0.0",
   "dependencies": {
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
