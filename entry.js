@@ -92,7 +92,7 @@ const listenProcesses = () => {
         const pmId = packet.process.pm_id;
         console.log(pmId, 'job::processedFile', packet.data.file);
 
-        if (fileIndex === files.length - 1) {
+        if (fileIndex === files.length) {
           console.log('All files have been processed, nice !');
           over = true;
           askCleaningWhenOver('Would you like to kill all remaining processes ? (y/n) ');
