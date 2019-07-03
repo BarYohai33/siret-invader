@@ -5,9 +5,9 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
-    "figlet": "^1.2.1",
-    "mongodb": "^3.2.3",
-    "pm2": "^3.5.0",
+    "figlet": "^1.2.3",
+    "mongodb": "^3.2.7",
+    "pm2": "^3.5.1",
     "split": "^1.0.1"
   },
   "scripts": {
