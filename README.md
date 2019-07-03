@@ -14,7 +14,8 @@ $ yarn
 
 You must first run `node entry.js` (or `yarn app`), then you can enter the manager by `node siretManager.js` (or `yarn pm`).
 
-**Note**: Before processing files, don't forget to split the big one (`4th action` in the `Siret Manager`).
+You have to download the siret file [StockEtablissement_utf8.csv](http://files.data.gouv.fr/insee-sirene/StockEtablissement_utf8.zip) and put it in the root directory of this project.
+Then, before processing it, split it in chunks (`4th action` in the `Siret Manager`).
 
 You can use the `Siret Manager` to do every action on the app, just by entering a number corresponding to the action.
 
